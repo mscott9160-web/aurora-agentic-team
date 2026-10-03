@@ -27,6 +27,14 @@ function Install-Target([string]$Source, [string]$Destination) {
             Write-PathAction 'UNCHANGED' $Destination
             return
         }
+        if ((Test-Path -LiteralPath $Destination -PathType Container) -and (Test-Path -LiteralPath (Join-Path $Destination '.aurora-agentic-team-installed'))) {
+            Write-PathAction 'UNCHANGED' $Destination
+            return
+        }
+        if ((Test-Path -LiteralPath $Source -PathType Leaf) -and (Test-Path -LiteralPath $Destination -PathType Leaf) -and ((Get-FileHash -LiteralPath $Source).Hash -eq (Get-FileHash -LiteralPath $Destination).Hash)) {
+            Write-PathAction 'UNCHANGED' $Destination
+            return
+        }
         Backup-Path $Destination
     }
     try {
@@ -35,6 +43,7 @@ function Install-Target([string]$Source, [string]$Destination) {
     } catch {
         if (Test-Path -LiteralPath $Source -PathType Container) {
             Copy-Item -LiteralPath $Source -Destination $Destination -Recurse
+            Set-Content -LiteralPath (Join-Path $Destination '.aurora-agentic-team-installed') -Value $Source -Encoding ascii
         } else {
             Copy-Item -LiteralPath $Source -Destination $Destination
         }
@@ -44,7 +53,14 @@ function Install-Target([string]$Source, [string]$Destination) {
 
 function Uninstall-Target([string]$Destination) {
     if (Test-Path -LiteralPath $Destination) {
-        Remove-Item -LiteralPath $Destination -Recurse -Force
+        [GC]::Collect()
+        [GC]::WaitForPendingFinalizers()
+        try {
+            Remove-Item -LiteralPath $Destination -Recurse -Force
+        } catch {
+            & cmd.exe /c "rmdir /s /q `"$Destination`""
+            if (Test-Path -LiteralPath $Destination) { throw }
+        }
         Write-PathAction 'REMOVE' $Destination
     }
     $backup = "$Destination$backupSuffix"
@@ -67,6 +83,7 @@ Get-ChildItem (Join-Path $repositoryRoot 'skills') -Directory | ForEach-Object {
 }
 $targets += @{ Source = Join-Path $repositoryRoot 'commands/sprint.md'; Destination = Join-Path $HOME '.claude/commands/aurora-sprint.md' }
 
+if ($Uninstall) { [array]::Reverse($targets) }
 foreach ($target in $targets) {
     if ($Uninstall) { Uninstall-Target $target.Destination } else { Install-Target $target.Source $target.Destination }
 }

@@ -22,11 +22,20 @@ install_target() {
     print_path UNCHANGED "$destination"
     return
   fi
+  if [ -d "$destination" ] && [ -f "$destination/.aurora-agentic-team-installed" ]; then
+    print_path UNCHANGED "$destination"
+    return
+  fi
+  if [ -f "$source" ] && [ -f "$destination" ] && cmp -s "$source" "$destination"; then
+    print_path UNCHANGED "$destination"
+    return
+  fi
   backup_path "$destination"
   if ln -s "$source" "$destination" 2>/dev/null; then
     print_path SYMLINK "$destination"
   elif [ -d "$source" ]; then
     cp -R "$source" "$destination"
+    printf '%s\n' "$source" > "$destination/.aurora-agentic-team-installed"
     print_path 'COPY (rerun after updates)' "$destination"
   else
     cp "$source" "$destination"
