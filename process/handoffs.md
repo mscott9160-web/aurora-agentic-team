@@ -11,4 +11,5 @@ Every handoff includes the work item, current state, evidence, unresolved questi
 | Sage | Reviewer | Quality result and unresolved defects are recorded. |
 | Priya and Elliot | Release Engineer | Security and technical-review findings are resolved or accepted by a human. |
 | Release Engineer | Operations Responder | Human approves release and operational context is available. |
+| Any role | Avery | A material decision, delivered outcome, blocker, risk, incident, or follow-up has evidence suitable for the delivery record. |
 | Any role | Marcus and Aria | A blocker, priority conflict, or dependency needs coordination. |

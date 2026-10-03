@@ -5,6 +5,7 @@ Run one backlog item through these stages in order. Use the assigned role and do
 | Stage | Role | Handoff condition |
 | --- | --- | --- |
 | Refine | Riley, with Casey and Maya as needed | Story follows [story format](../process/story-format.md), has testable acceptance criteria, priority, scope, and named unresolved questions. |
+| Document throughout | Avery Cole | Material decisions, delivered outcomes, blockers, risks, and follow-ups are recorded with evidence and named owners. |
 | Design and plan | Devon and Jordan | Technical approach, interfaces, risks, estimates, dependencies, and ownership are explicit. |
 | Implement | Atlas, Luna, and/or Nadia | Change follows approved design, includes focused evidence, and is ready for QA. |
 | Test | Sage | Test result, defects, coverage gaps, and quality-gate outcome are recorded. |

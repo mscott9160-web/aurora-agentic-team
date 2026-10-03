@@ -29,6 +29,7 @@ The following roles were added to cover workflow ownership absent from the sourc
 
 - **Elliot Park, Code Reviewer**: independent, read-only technical review after Sage's QA gate and before release readiness.
 - **Nadia Brooks, Platform Engineer**: approved implementation of CI/CD, infrastructure configuration, observability, environments, and rollback mechanics.
+- **Avery Cole, Technical Writer**: evidence-based documentation of decisions, delivery progress, risks, issues, and follow-up work throughout the workflow.
 
 ## Permission Changes
 

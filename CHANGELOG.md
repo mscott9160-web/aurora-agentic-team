@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 - 2026-10-03
+
+- Added Avery Cole, Technical Writer, to maintain the evidence-based delivery record throughout each workflow.
+
 ## 0.1.2 - 2026-10-03
 
 - Added Elliot Park, Code Reviewer, and Nadia Brooks, Platform Engineer.
