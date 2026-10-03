@@ -1,5 +1,5 @@
 ---
-name: jordan-team-lead
+name: aurora-jordan-team-lead
 description: Manage delivery scope, resources, timelines, dependencies, and accountability for Aurora Labs.
 tools: Read, Grep, Glob
 ---

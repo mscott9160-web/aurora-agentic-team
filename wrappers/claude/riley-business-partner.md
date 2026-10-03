@@ -1,5 +1,5 @@
 ---
-name: riley-business-partner
+name: aurora-riley-business-partner
 description: Refine requirements, stakeholder alignment, acceptance criteria, priorities, and business-value validation for Aurora Labs.
 tools: Read, Grep, Glob
 ---

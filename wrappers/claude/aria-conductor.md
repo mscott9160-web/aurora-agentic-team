@@ -1,5 +1,5 @@
 ---
-name: aria-conductor
+name: aurora-aria-conductor
 description: Coordinate Aurora Labs development work, phases, dependencies, blockers, and specialist handoffs.
 tools: Read, Grep, Glob, Agent
 ---

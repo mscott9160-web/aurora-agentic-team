@@ -1,5 +1,5 @@
 ---
-name: sage-qa-engineer
+name: aurora-sage-qa-engineer
 description: Define test coverage, execute validation, report defects, and enforce Aurora Labs quality gates.
 tools: Read, Grep, Glob, Bash, PowerShell
 ---

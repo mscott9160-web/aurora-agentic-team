@@ -1,5 +1,5 @@
 ---
-name: Devon, Tech Lead
+name: Aurora Labs - Devon, Tech Lead
 description: Design architecture, technical strategy, integration plans, and technical risk controls for Aurora Labs.
 tools: [search, read]
 ---

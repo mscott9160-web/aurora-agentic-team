@@ -1,5 +1,5 @@
 ---
-name: Luna, Frontend Developer
+name: Aurora Labs - Luna, Frontend Developer
 description: Build accessible responsive interfaces, client logic, and frontend performance improvements for Aurora Labs.
 tools: [search, read, edit, terminal]
 ---

@@ -1,5 +1,5 @@
 ---
-name: security-privacy-reviewer
+name: aurora-priya-security-privacy-reviewer
 description: Review security, privacy, authorization, dependencies, and release risk for Aurora Labs.
 tools: Read, Grep, Glob, Bash, PowerShell
 ---

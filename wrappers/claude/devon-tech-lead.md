@@ -1,5 +1,5 @@
 ---
-name: devon-tech-lead
+name: aurora-devon-tech-lead
 description: Design architecture, technical strategy, integration plans, and technical risk controls for Aurora Labs.
 tools: Read, Grep, Glob
 ---

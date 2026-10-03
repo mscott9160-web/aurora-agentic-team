@@ -1,5 +1,5 @@
 ---
-name: operations-incident-responder
+name: aurora-theo-operations-incident-responder
 description: Analyze incidents, operational evidence, remediation proposals, and follow-up work for Aurora Labs.
 tools: Read, Grep, Glob, Bash, PowerShell
 ---

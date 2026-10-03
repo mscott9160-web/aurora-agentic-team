@@ -1,5 +1,5 @@
 ---
-name: Jordan, Team Lead
+name: Aurora Labs - Jordan, Team Lead
 description: Manage delivery scope, resources, timelines, dependencies, and accountability for Aurora Labs.
 tools: [search, read]
 ---

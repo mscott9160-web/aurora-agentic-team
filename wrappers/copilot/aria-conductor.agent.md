@@ -1,5 +1,5 @@
 ---
-name: Aria, Conductor
+name: Aurora Labs - Aria, Conductor
 description: Coordinate Aurora Labs development work, phases, dependencies, blockers, and specialist handoffs.
 tools: [search, read, agent]
 agents: ["*"]

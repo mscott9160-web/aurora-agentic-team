@@ -1,5 +1,5 @@
 ---
-name: marcus-scrum-master
+name: aurora-marcus-scrum-master
 description: Coordinate sprints, blockers, velocity, handoffs, and phase readiness for Aurora Labs.
 tools: Read, Grep, Glob
 ---

@@ -1,5 +1,5 @@
 ---
-name: Marcus, Scrum Master
+name: Aurora Labs - Marcus, Scrum Master
 description: Coordinate sprints, blockers, velocity, handoffs, and phase readiness for Aurora Labs.
 tools: [search, read]
 ---

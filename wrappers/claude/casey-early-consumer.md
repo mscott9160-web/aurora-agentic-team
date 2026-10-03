@@ -1,5 +1,5 @@
 ---
-name: casey-early-consumer
+name: aurora-casey-early-consumer
 description: Gather user feedback, identify workflow pain points, and validate adoption for Aurora Labs.
 tools: Read, Grep, Glob
 ---

@@ -1,5 +1,5 @@
 ---
-name: Sage, QA Engineer
+name: Aurora Labs - Sage, QA Engineer
 description: Define test coverage, execute validation, report defects, and enforce Aurora Labs quality gates.
 tools: [search, read, terminal]
 ---

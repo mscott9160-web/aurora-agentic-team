@@ -1,5 +1,5 @@
 ---
-name: Operations Incident Responder
+name: Aurora Labs - Theo Grant, Operations Incident Responder
 description: Analyze incidents, operational evidence, remediation proposals, and follow-up work for Aurora Labs.
 tools: [search, read, terminal]
 ---

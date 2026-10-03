@@ -1,5 +1,5 @@
 ---
-name: maya-product-design-lead
+name: aurora-maya-product-design-lead
 description: Define product design direction, accessibility requirements, interaction flows, and design review evidence for Aurora Labs.
 tools: Read, Grep, Glob
 ---

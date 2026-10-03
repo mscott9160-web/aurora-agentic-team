@@ -1,5 +1,5 @@
 ---
-name: atlas-backend-developer
+name: aurora-atlas-backend-developer
 description: Build APIs, databases, server logic, integrations, and backend performance improvements for Aurora Labs.
 tools: Read, Grep, Glob, Edit, Write, Bash, PowerShell
 ---
