@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2 - 2026-10-03
+
+- Added Elliot Park, Code Reviewer, and Nadia Brooks, Platform Engineer.
+- Added architecture, threat-model, release, incident, bug-triage, and research skills.
+
 ## 0.1.1 - 2026-10-03
 
 - Branded every wrapper as an Aurora Labs team agent with a unique identifier.

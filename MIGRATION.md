@@ -23,11 +23,18 @@ Each central role has exactly one wrapper in `wrappers/copilot/` and one in `wra
 
 The generic Aurora UI/UX Designer and Maya Chen variants are combined into **Maya Chen, Product Design Lead**. This makes one role accountable for product design direction, interaction design, accessibility direction, visual language, and design review.
 
+## Central Additions
+
+The following roles were added to cover workflow ownership absent from the source catalog:
+
+- **Elliot Park, Code Reviewer**: independent, read-only technical review after Sage's QA gate and before release readiness.
+- **Nadia Brooks, Platform Engineer**: approved implementation of CI/CD, infrastructure configuration, observability, environments, and rollback mechanics.
+
 ## Permission Changes
 
 The prior core Aurora agents broadly exposed `search`, `read`, `edit`, `agent`, and `todo` tools. The central repository narrows this by role:
 
-- Atlas and Luna retain editing and shell access because they implement code.
+- Atlas, Luna, and Nadia retain editing and shell access because they implement approved changes.
 - Aria retains delegation but no editing or shell access.
 - Marcus, Jordan, Devon, Riley, Casey, Maya, Release Engineer, and Operations Incident Responder are read-only.
 - Sage and Security and Privacy Reviewer can inspect and run validation commands but cannot edit or write files.
