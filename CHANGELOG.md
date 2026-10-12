@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Enabled terminal execution for all 16 roles in both Copilot and Claude, retaining role-specific editing restrictions, setup ownership, host safeguards, and human approval gates.
 - Corrected Copilot shell tool declarations from `terminal` to `execute` while preserving least-privilege role boundaries.
 - Added manual setup and plan-saving handoffs from Aria, Devon, and Jordan to Nadia and Avery.
 - Added capability preflight, approved-plan persistence, and explicitly authorized GitHub CLI repository-creation guidance shared by Copilot and Claude roles.

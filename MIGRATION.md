@@ -33,19 +33,19 @@ The following roles were added to cover workflow ownership absent from the sourc
 
 ## Permission Changes
 
-The prior core Aurora agents broadly exposed `search`, `read`, `edit`, `agent`, and `todo` tools. The central repository narrows this by role:
+The prior core Aurora agents broadly exposed `search`, `read`, `edit`, `agent`, and `todo` tools. The central repository limits editing and delegation by role. As of the 2026-10-12 user-approved update, all 16 roles have terminal execution configured in both Copilot and Claude:
 
 - Atlas, Luna, and Nadia retain editing and shell access because they implement approved changes.
-- Aria retains delegation but no editing or shell access.
-- Marcus, Jordan, Devon, Riley, Casey, Maya, and Release Engineer are read-only.
+- Aria retains delegation and gains shell access for role-appropriate inspection/coordination commands, but no editing tools.
+- Marcus, Jordan, Devon, Riley, Casey, Maya, and Release Engineer gain shell access for role-appropriate commands, but no editing tools.
 - Sage, Elliot, Security and Privacy Reviewer, and Operations Incident Responder can inspect and run scoped validation/diagnostic commands but cannot edit product files.
-- Avery can edit Markdown documentation only and has no shell access.
+- Avery gains shell access but may still edit Markdown documentation only.
 
-Copilot shell-enabled wrappers now use `execute` rather than `terminal`. Aria, Devon, and Jordan expose manual handoffs to Avery for approved plan persistence and Nadia for approved setup. Nadia can use an authenticated GitHub CLI for explicitly approved repository creation; no global GitHub permission grant is added. See [setup and capability preflight](process/setup-and-capabilities.md).
+Every Copilot wrapper now includes `execute` rather than `terminal`; every Claude wrapper declares `Bash` and `PowerShell` as supported by the host. Aria, Devon, and Jordan expose manual handoffs to Avery for approved plan persistence and Nadia for approved setup. Nadia can use an authenticated GitHub CLI for explicitly approved repository creation; no global GitHub permission grant is added. See [setup and capability preflight](process/setup-and-capabilities.md).
 
 Personal symlink installs use the updated wrappers immediately on disk. Refresh the selected agent/session to reload its tool selection. Resync existing projects to update their local copies. For copied personal installs, follow the preflight's reviewed refresh guidance: the shell installer skips managed copied directories on rerun. No changes to VS Code trust, organization policies, authentication, or session approval settings are made by this update.
 
-This is a least-privilege change. It preserves role responsibilities while preventing review, QA, planning, design, release, and operations roles from modifying product files.
+This broadens terminal capability without changing role responsibilities or granting additional file-editing tools. Shell access can technically modify files and remote resources, so non-writing role boundaries are instruction-level constraints, not a sandbox. Commands must remain within the assigned role and approved scope; host safeguards and human approval gates remain in force.
 
 ## Project-Specific Content Left Out
 

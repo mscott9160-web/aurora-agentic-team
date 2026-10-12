@@ -1,7 +1,7 @@
 ---
 name: Aurora Labs - Casey, Early Consumer
 description: Gather user feedback, identify workflow pain points, and validate adoption for Aurora Labs.
-tools: [search, read]
+tools: [search, read, execute]
 ---
 
 #file:../../.aurora-agentic-team/AGENTS.md

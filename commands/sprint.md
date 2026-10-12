@@ -2,7 +2,7 @@
 
 Run one backlog item through these stages in order. Use the assigned role and do not advance until its condition is true.
 
-Before setup or plan persistence, follow the setup and capability preflight referenced by the loaded Aurora shared rules. Resolve it from those rules, not from this command's installation directory. After human approval, Avery saves the plan and Nadia performs the approved setup. A read-only planning role should hand off this work, not request blanket permissions or bypass approval.
+Before setup or plan persistence, follow the setup and capability preflight referenced by the loaded Aurora shared rules. Resolve it from those rules, not from this command's installation directory. After human approval, Avery saves the plan and Nadia performs the approved setup. Planning roles have terminal access for role-appropriate commands but should still hand off this work rather than bypass ownership or approval.
 
 | Stage | Role | Handoff condition |
 | --- | --- | --- |

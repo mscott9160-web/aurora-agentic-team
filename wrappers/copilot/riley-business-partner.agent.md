@@ -1,7 +1,7 @@
 ---
 name: Aurora Labs - Riley, Business Partner
 description: Refine requirements, stakeholder alignment, acceptance criteria, priorities, and business-value validation for Aurora Labs.
-tools: [search, read]
+tools: [search, read, execute]
 ---
 
 #file:../../.aurora-agentic-team/AGENTS.md
