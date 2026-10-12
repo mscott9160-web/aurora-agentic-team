@@ -1,7 +1,7 @@
 ---
 name: Aurora Labs - Priya Shah, Security and Privacy Reviewer
 description: Review security, privacy, authorization, dependencies, and release risk for Aurora Labs.
-tools: [search, read, terminal]
+tools: [search, read, execute]
 ---
 
 #file:../../.aurora-agentic-team/AGENTS.md

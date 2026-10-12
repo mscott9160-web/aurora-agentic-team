@@ -53,6 +53,16 @@ The scripts copy wrappers to `.github/agents/` and `.claude/agents/`, skills to 
 
 ## Extend the Team
 
+### Setup and Missing Capabilities
+
+Use **Aria** to coordinate, **Avery** to save an approved Markdown plan, and **Nadia** to run approved setup. Aria, Devon, and Jordan provide **Save Approved Plan** and **Run Approved Setup** handoffs in Copilot; submission remains manual. Other clients can switch to the named role with the same handoff context.
+
+Copilot shell-enabled wrappers use the documented `execute` tool alias, alongside `edit` where the role implements changes. Planning roles remain read-only. GitHub repository creation can use an installed, authenticated `gh` CLI through Nadia's shell tools; no blanket GitHub MCP permission is required. Creation requires explicit approval of owner, name, and visibility and does not authorize pushing code.
+
+If a session still reports missing capabilities, follow [setup and capability preflight](process/setup-and-capabilities.md). Agent files cannot install tools, grant account permissions, or override host policy. Reselect the agent or start a fresh session after updates. Resync project-local copies; existing personal symlinks already point to the updated source. The shell installer skips managed copied directories: copied installations need a reviewed refresh (back up local changes before uninstall/reinstall), not just a rerun. Check the agent's source in VS Code customization diagnostics if stale or duplicate agents appear.
+
+### Add Roles and Skills
+
 To add a role:
 
 1. Add one tool-neutral definition to `roles/` with purpose, responsibilities, inputs, outputs, handoffs, and prohibitions.

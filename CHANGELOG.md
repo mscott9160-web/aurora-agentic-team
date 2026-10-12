@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Corrected Copilot shell tool declarations from `terminal` to `execute` while preserving least-privilege role boundaries.
+- Added manual setup and plan-saving handoffs from Aria, Devon, and Jordan to Nadia and Avery.
+- Added capability preflight, approved-plan persistence, and explicitly authorized GitHub CLI repository-creation guidance shared by Copilot and Claude roles.
+- Documented session refresh, copied-install updates, and precise capability/authentication blockers without changing host security settings.
+
 ## 0.1.3 - 2026-10-03
 
 - Added Avery Cole, Technical Writer, to maintain the evidence-based delivery record throughout each workflow.

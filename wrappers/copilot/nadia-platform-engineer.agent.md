@@ -1,7 +1,7 @@
 ---
 name: Aurora Labs - Nadia Brooks, Platform Engineer
 description: Implement CI/CD, infrastructure, observability, environment configuration, and rollback mechanics for Aurora Labs.
-tools: [search, read, edit, terminal]
+tools: [search, read, edit, execute]
 ---
 
 #file:../../.aurora-agentic-team/AGENTS.md

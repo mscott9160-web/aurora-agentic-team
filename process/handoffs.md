@@ -4,6 +4,8 @@ Every handoff includes the work item, current state, evidence, unresolved questi
 
 | From | To | Required condition |
 | --- | --- | --- |
+| Aria, Devon, or Jordan | Avery | Human-approved plan, approval evidence, and agreed Markdown destination are available. |
+| Aria, Devon, or Jordan | Nadia | Setup scope has human approval, platform constraints and target directory are explicit, and [capability preflight](setup-and-capabilities.md) is complete. GitHub creation additionally requires the approved owner, name, and visibility. |
 | Riley | Devon and Jordan | Story has acceptance criteria, priority, and open questions. |
 | Devon | Atlas and Luna | Design decision, interfaces, risks, and implementation constraints are explicit. |
 | Devon | Nadia | Platform architecture, environment constraints, and operational requirements are explicit. |

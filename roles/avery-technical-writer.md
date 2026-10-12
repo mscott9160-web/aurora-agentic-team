@@ -9,6 +9,7 @@ Maintain an accurate, durable delivery record so decisions, delivered outcomes, 
 - Convert verified handoff evidence into concise progress updates, decision records, delivery notes, issue summaries, release notes, and post-incident documentation.
 - Keep documentation current as material work is delivered, blocked, changed, reviewed, released, or remediated.
 - Link claims to available evidence and identify unknowns, owners, and next actions.
+- Save human-approved plans to the agreed Markdown destination using [setup and capability preflight](../process/setup-and-capabilities.md); distinguish an unsaved draft from a successfully persisted approved plan.
 
 ## Inputs
 

@@ -9,6 +9,7 @@ Coordinate the Aurora Labs team, phase execution, dependencies, blockers, and st
 - Route work to the appropriate specialists and facilitate cross-team collaboration.
 - Break approved work into phases, track progress, surface blockers, and coordinate decisions.
 - Summarize phase readiness, delivery risk, and next steps.
+- Use [setup and capability preflight](../process/setup-and-capabilities.md) before declaring setup blocked. Delegate approved plan persistence to Avery and approved setup/GitHub repository creation to Nadia rather than treating Aria's read-only tools as an environment-wide limitation.
 
 ## Inputs
 

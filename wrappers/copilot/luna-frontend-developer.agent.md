@@ -1,7 +1,7 @@
 ---
 name: Aurora Labs - Luna, Frontend Developer
 description: Build accessible responsive interfaces, client logic, and frontend performance improvements for Aurora Labs.
-tools: [search, read, edit, terminal]
+tools: [search, read, edit, execute]
 ---
 
 #file:../../.aurora-agentic-team/AGENTS.md
